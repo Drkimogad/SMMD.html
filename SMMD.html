@@ -1,0 +1,329 @@
+<html>
+ <head>
+  <title>
+   Social Media Management Dashboard
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <div class="min-h-screen flex flex-col">
+   <!-- Header -->
+   <header class="bg-white shadow-md py-4">
+    <div class="container mx-auto flex justify-between items-center px-6">
+     <div class="text-2xl font-bold text-gray-800">
+      Dashboard
+     </div>
+     <div class="flex items-center space-x-4">
+      <div class="relative">
+       <input class="border rounded-lg py-2 px-4" placeholder="Search..." type="text"/>
+       <i class="fas fa-search absolute right-3 top-3 text-gray-500">
+       </i>
+      </div>
+      <div class="relative">
+       <i class="fas fa-bell text-gray-600 text-xl">
+       </i>
+       <span class="absolute top-0 right-0 inline-block w-2 h-2 bg-red-600 rounded-full">
+       </span>
+      </div>
+      <img alt="Profile picture of the user" class="rounded-full w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/KWvWMJuACQYkCxSfZabqU6zA3zm1mreDBhbp9LJiAksKkCzTA.jpg" width="40"/>
+     </div>
+    </div>
+   </header>
+   <!-- Main Content -->
+   <div class="flex flex-1">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white shadow-md">
+     <div class="p-6">
+      <nav class="space-y-4">
+       <a class="flex items-center space-x-2 text-gray-700 hover:text-blue-600" href="#">
+        <i class="fas fa-home">
+        </i>
+        <span>
+         Home
+        </span>
+       </a>
+       <a class="flex items-center space-x-2 text-gray-700 hover:text-blue-600" href="#">
+        <i class="fas fa-chart-line">
+        </i>
+        <span>
+         Analytics
+        </span>
+       </a>
+       <a class="flex items-center space-x-2 text-gray-700 hover:text-blue-600" href="#">
+        <i class="fas fa-calendar-alt">
+        </i>
+        <span>
+         Schedule
+        </span>
+       </a>
+       <a class="flex items-center space-x-2 text-gray-700 hover:text-blue-600" href="#">
+        <i class="fas fa-users">
+        </i>
+        <span>
+         Followers
+        </span>
+       </a>
+       <a class="flex items-center space-x-2 text-gray-700 hover:text-blue-600" href="#">
+        <i class="fas fa-cog">
+        </i>
+        <span>
+         Settings
+        </span>
+       </a>
+      </nav>
+     </div>
+    </aside>
+    <!-- Main Dashboard -->
+    <main class="flex-1 p-6">
+     <!-- Social Media Icons -->
+     <div class="flex justify-end space-x-4 mb-6">
+      <i class="fab fa-facebook text-blue-600 text-2xl">
+      </i>
+      <i class="fab fa-twitter text-blue-400 text-2xl">
+      </i>
+      <i class="fab fa-instagram text-pink-600 text-2xl">
+      </i>
+      <i class="fab fa-linkedin text-blue-700 text-2xl">
+      </i>
+      <i class="fab fa-youtube text-red-600 text-2xl">
+      </i>
+      <i class="fab fa-pinterest text-red-600 text-2xl">
+      </i>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <div class="flex items-center justify-between">
+        <h2 class="text-xl font-bold text-gray-800">
+         Total Followers
+        </h2>
+        <i class="fas fa-users text-blue-600 text-2xl">
+        </i>
+       </div>
+       <div class="mt-4 text-3xl font-semibold text-gray-800">
+        12,345
+       </div>
+       <div class="mt-2 text-sm text-gray-600">
+        +123 since last week
+       </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <div class="flex items-center justify-between">
+        <h2 class="text-xl font-bold text-gray-800">
+         Posts
+        </h2>
+        <i class="fas fa-edit text-green-600 text-2xl">
+        </i>
+       </div>
+       <div class="mt-4 text-3xl font-semibold text-gray-800">
+        678
+       </div>
+       <div class="mt-2 text-sm text-gray-600">
+        +45 since last week
+       </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <div class="flex items-center justify-between">
+        <h2 class="text-xl font-bold text-gray-800">
+         Engagement
+        </h2>
+        <i class="fas fa-heart text-red-600 text-2xl">
+        </i>
+       </div>
+       <div class="mt-4 text-3xl font-semibold text-gray-800">
+        89%
+       </div>
+       <div class="mt-2 text-sm text-gray-600">
+        +5% since last week
+       </div>
+      </div>
+     </div>
+     <!-- Recent Posts -->
+     <div class="mt-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">
+       Recent Posts
+      </h2>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <div class="space-y-4">
+        <!-- Post 1 -->
+        <div class="flex items-center space-x-4">
+         <img alt="Thumbnail of the first post" class="w-16 h-16 rounded-lg" height="60" src="https://storage.googleapis.com/a1aa/image/NcNBQTuwm2oAFdBEJFd1rVMuGqK0ni1JvRc7eETDsF4ESh5JA.jpg" width="60"/>
+         <div>
+          <h3 class="text-lg font-semibold text-gray-800">
+           Post Title 1
+          </h3>
+          <p class="text-sm text-gray-600">
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+         </div>
+        </div>
+        <!-- Post 2 -->
+        <div class="flex items-center space-x-4">
+         <img alt="Thumbnail of the second post" class="w-16 h-16 rounded-lg" height="60" src="https://storage.googleapis.com/a1aa/image/PI41pp7YhDptOVzC74GbEMqyKypVlXZaOUhoObJZGPMBpw8E.jpg" width="60"/>
+         <div>
+          <h3 class="text-lg font-semibold text-gray-800">
+           Post Title 2
+          </h3>
+          <p class="text-sm text-gray-600">
+           Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+         </div>
+        </div>
+        <!-- Post 3 -->
+        <div class="flex items-center space-x-4">
+         <img alt="Thumbnail of the third post" class="w-16 h-16 rounded-lg" height="60" src="https://storage.googleapis.com/a1aa/image/jtHwPdFRlpKMMFRcLZf6Nf9RaMecZwSrhpP32nnf0T5PQKMPB.jpg" width="60"/>
+         <div>
+          <h3 class="text-lg font-semibold text-gray-800">
+           Post Title 3
+          </h3>
+          <p class="text-sm text-gray-600">
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+          </p>
+         </div>
+        </div>
+        <!-- Post 4 -->
+        <div class="flex items-center space-x-4">
+         <img alt="Thumbnail of the fourth post" class="w-16 h-16 rounded-lg" height="60" src="https://storage.googleapis.com/a1aa/image/D2ESjAeQKGzFZCG0WTJOd84jt1HqSfR0iItOvaxFYCAGkCzTA.jpg" width="60"/>
+         <div>
+          <h3 class="text-lg font-semibold text-gray-800">
+           Post Title 4
+          </h3>
+          <p class="text-sm text-gray-600">
+           Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+          </p>
+         </div>
+        </div>
+        <!-- Post 5 -->
+        <div class="flex items-center space-x-4">
+         <img alt="Thumbnail of the fifth post" class="w-16 h-16 rounded-lg" height="60" src="https://storage.googleapis.com/a1aa/image/zPnEqhYssAJBEFEJGWfrR28mkNfEtmgVNjU4yfGUiTlOIFmnA.jpg" width="60"/>
+         <div>
+          <h3 class="text-lg font-semibold text-gray-800">
+           Post Title 5
+          </h3>
+          <p class="text-sm text-gray-600">
+           In voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- Social Media Platforms -->
+     <div class="mt-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">
+       Social Media Platforms
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+       <!-- Facebook -->
+       <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-center justify-between">
+         <h2 class="text-xl font-bold text-gray-800">
+          Facebook
+         </h2>
+         <i class="fab fa-facebook text-blue-600 text-2xl">
+         </i>
+        </div>
+        <div class="mt-4 text-3xl font-semibold text-gray-800">
+         5,678
+        </div>
+        <div class="mt-2 text-sm text-gray-600">
+         +78 since last week
+        </div>
+       </div>
+       <!-- Twitter -->
+       <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-center justify-between">
+         <h2 class="text-xl font-bold text-gray-800">
+          Twitter
+         </h2>
+         <i class="fab fa-twitter text-blue-400 text-2xl">
+         </i>
+        </div>
+        <div class="mt-4 text-3xl font-semibold text-gray-800">
+         3,456
+        </div>
+        <div class="mt-2 text-sm text-gray-600">
+         +56 since last week
+        </div>
+       </div>
+       <!-- Instagram -->
+       <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-center justify-between">
+         <h2 class="text-xl font-bold text-gray-800">
+          Instagram
+         </h2>
+         <i class="fab fa-instagram text-pink-600 text-2xl">
+         </i>
+        </div>
+        <div class="mt-4 text-3xl font-semibold text-gray-800">
+         7,890
+        </div>
+        <div class="mt-2 text-sm text-gray-600">
+         +90 since last week
+        </div>
+       </div>
+       <!-- LinkedIn -->
+       <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-center justify-between">
+         <h2 class="text-xl font-bold text-gray-800">
+          LinkedIn
+         </h2>
+         <i class="fab fa-linkedin text-blue-700 text-2xl">
+         </i>
+        </div>
+        <div class="mt-4 text-3xl font-semibold text-gray-800">
+         2,345
+        </div>
+        <div class="mt-2 text-sm text-gray-600">
+         +45 since last week
+        </div>
+       </div>
+       <!-- YouTube -->
+       <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-center justify-between">
+         <h2 class="text-xl font-bold text-gray-800">
+          YouTube
+         </h2>
+         <i class="fab fa-youtube text-red-600 text-2xl">
+         </i>
+        </div>
+        <div class="mt-4 text-3xl font-semibold text-gray-800">
+         1,234
+        </div>
+        <div class="mt-2 text-sm text-gray-600">
+         +34 since last week
+        </div>
+       </div>
+       <!-- Pinterest -->
+       <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-center justify-between">
+         <h2 class="text-xl font-bold text-gray-800">
+          Pinterest
+         </h2>
+         <i class="fab fa-pinterest text-red-600 text-2xl">
+         </i>
+        </div>
+        <div class="mt-4 text-3xl font-semibold text-gray-800">
+         987
+        </div>
+        <div class="mt-2 text-sm text-gray-600">
+         +27 since last week
+        </div>
+       </div>
+      </div>
+     </div>
+    </main>
+   </div>
+  </div>
+ </body>
+</html>
